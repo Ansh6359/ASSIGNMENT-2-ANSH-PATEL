@@ -1,0 +1,11 @@
+/* I used separate css file to put different delivery section iin website */
+/* used background tag to define background image */
+html {
+    background: url(./pngtree-simple-food-delivery-meal-fashion-poster-background-yellow-back-image_158378.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* this file is linked with index1.html */
