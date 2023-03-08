@@ -1,0 +1,79 @@
+/* Center the form */
+form {
+	margin: auto;
+	width: 50%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* put style to the headings */
+h1,
+h2 {
+	text-align: center;
+	margin-top: 0;
+}
+
+/* Style the labels */
+label {
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+/* give the background color */
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+/* make new style for checkbox*/
+input[type="checkbox"] {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+/* to style submit button*/
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* it make new theme for submit button */
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+/* Style the delivery checkbox */
+#delivery {
+	margin-top: 10px;
+}
+
+/* Style the form on smaller screens */
+@media screen and (max-width: 600px) {
+	form {
+		width: 100%;
+	}
+}
