@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Pizza Order Website</title>
+  <link rel="stylesheet" href="index.css"> <!--this is the link of  css file-->
+  <style>
+    /* here I used body tag to put background image */
+    body {
+      background-image: url('./download.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pizza Order Form</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <!-- from here It starts to get personal information -->
+        <h2>Personal Information</h2>
+      </div>
+      <!-- used div and label tag to gather personal information -->
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <h1>Welcome to our Pizza Restaurant</h1>
+      <section>
+        <!--  this the pizza modification options where customer can use their own preferences-->
+        <p>Order your favorite pizza from our website and get it at your home with in 30 minuts for sure</p>
+
+        <!-- added 3 sizes of pizza by using of  lable and select tag -->
+        <label for="size">Pizza Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select><br>
+        <h2>Pizza Toppings</h2>
+        <p></p> <!--USED PARAGRAPH TAG TO GIVE PARAGRAPH-->
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <p></p>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>
+        <p></p>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="olives">Olives</label>
+        <p></p>
+        <input type="checkbox" id="bacon" name="toppings" value="bacon">
+        <label for="bacon">Bacon</label>
+        <p></p>
+        <input type="checkbox" id="peppers" name="toppings" value="peppers">
+        <label for="peppers">Peppers</label>
+
+      </section>
+      <br>
+      <!-- the list of cold drinks. -->
+      <!-- used input and lable tag to give options -->
+      <section>
+        <h2>Cold-drinks</h2>
+        <input type="checkbox" id="Coca-Cola" name="Cold-drinks" value="Coca-Cola">
+        <label for="Coca-Cola">Coca-Cola</label>
+        <input type="checkbox" id="pepsi" name="pepsi" value="pepsi">
+        <label for="pepsi">Pepsi</label>
+        <input type="checkbox" id="sprite" name="Cold-drinks" value="sprite">
+        <label for="sprite">Sprite</label>
+        <input type="checkbox" id="mountainDew" name="Cold-drinks" value="mountainDew">
+        <label for="mountainDew">Mountain Dew</label>
+      </section>
+      <section>
+        <div>
+          <a href="index.html"></a> <!--use a tag to add index.html file-->
+        </div>
+        <!-- NAV TO CONTAIN THE HOME DELIVERY MENU -->
+        <header>
+          <nav>
+            <h2>For Home Delivery Click Below Button </h2>
+            <ol>
+              <li>
+                <a href="index1.html">Home Delivery</a>
+              </li>
+            </ol>
+          </nav>
+        </header>
+      </section>
+      <br>
+      <section>
+        <!-- here i added form tag to include coupne code -->
+        <!-- If someone have coupne code then he can use it here to get perticular disccount -->
+        <label for="coupon-code">Enter coupon code:</label>
+        <input type="text" id="coupon-code" name="coupon-code">
+        <button type="submit">Apply</button>
+        <p></p>
+        <!-- also added Instruction tag for consumer to give particular in order or instruction -->
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions"></textarea>
+      </section>
+      <input type="submit" value="Place Order">
+    </form>
+  </main>
+</body>
+
+</html>
